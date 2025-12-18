@@ -73,23 +73,5 @@ The program generates logs to verify performance and accuracy:
 
 ## Build and Run
 
-### Linux
-To build, change to the project directory and run make:
-```bash
-$cd <project_dir>$ make
-```.
-
-### Windows
-Use Visual Studio solution files (.sln). Ensure `libtiff` is linked in project properties.
-
-### Running the Program
-After building, execute the binary:
-```bash
-$ ./bin/final_project --input data/input_images/ --output data/output_images/
-```.
-
-### Cleaning Up
-To remove generated files:
-```bash
-$ make clean
-```.
+Compile using: nvcc -o rl_deblur main.cu -lcufft -ltiff -std=c++17
+Run using: ./rl_deblur
