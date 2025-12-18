@@ -73,5 +73,6 @@ The program generates logs to verify performance and accuracy:
 
 ## Build and Run
 
-Compile using: nvcc -o rl_deblur main.cu -lcufft -ltiff -std=c++17
+Compile using: nvcc -o rl_deblur main.cu -lcufft -ltiff -std=c++17 
+
 Run using: ./rl_deblur
